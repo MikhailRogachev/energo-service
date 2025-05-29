@@ -1,9 +1,33 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36109.1 d17.14
+VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inventory-consumer", "inventory-consumer\inventory-consumer.csproj", "{D8C7DEC3-8400-43E0-B83B-FE49B329F191}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inventory-producer", "inventory-producer\inventory-producer.csproj", "{D805CED8-7A86-4E1B-A22B-5E28576EE9BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "energo.domain", "energo.domain\energo.domain.csproj", "{03AA3118-0586-4C75-AB24-9F3FB7E7BE23}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D8C7DEC3-8400-43E0-B83B-FE49B329F191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D8C7DEC3-8400-43E0-B83B-FE49B329F191}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D8C7DEC3-8400-43E0-B83B-FE49B329F191}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D8C7DEC3-8400-43E0-B83B-FE49B329F191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D805CED8-7A86-4E1B-A22B-5E28576EE9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D805CED8-7A86-4E1B-A22B-5E28576EE9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D805CED8-7A86-4E1B-A22B-5E28576EE9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D805CED8-7A86-4E1B-A22B-5E28576EE9BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03AA3118-0586-4C75-AB24-9F3FB7E7BE23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03AA3118-0586-4C75-AB24-9F3FB7E7BE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03AA3118-0586-4C75-AB24-9F3FB7E7BE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03AA3118-0586-4C75-AB24-9F3FB7E7BE23}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
