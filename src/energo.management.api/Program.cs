@@ -9,7 +9,7 @@ builder.Services.AddOptions<ConsumingBrokerSettings>()
            .Bind(builder.Configuration.GetSection(nameof(ConsumingBrokerSettings)));
 
 // run service
-builder.Services.AddHostedService<Consumer<Customer>>();
+builder.Services.AddHostedService<ConsumerService<Customer>>();
 
 var app = builder.Build();
 app.Run();

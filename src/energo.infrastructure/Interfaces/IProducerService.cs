@@ -1,7 +1,6 @@
 ﻿namespace energo.infrastructure.Interfaces;
 
-public interface IProducerService
+public interface IProducerService<T>
 {
-    Task SendAsync(string topic, object obj);
-    Task ProduceAsync(string topic, string message);
+    Task ProduceAsync(T value, string topic, string trancactionType);
 }

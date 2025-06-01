@@ -29,7 +29,7 @@ public class Startup
         services.AddSingleton<IValidator<CustomerDto>, CustomerValidator>();
 
         // add services
-        services.AddScoped<IProducer<Customer>, Producer<Customer>>();
+        services.AddScoped<IProducerService<Customer>, ProducerService<Customer>>();
 
         // add automapper
         services.AddSingleton(new MapperConfiguration(cfg =>

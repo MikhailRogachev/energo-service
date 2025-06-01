@@ -8,14 +8,14 @@ using Microsoft.Extensions.Options;
 namespace energo.infrastructure.Consumer;
 
 
-public class Consumer<T> : BackgroundService where T : class
+public class ConsumerService<T> : BackgroundService where T : class
 {
     private readonly BrokerSettings _settings;
-    private readonly ILogger<Consumer<T>> _logger;
+    private readonly ILogger<ConsumerService<T>> _logger;
 
-    public Consumer(
+    public ConsumerService(
         IOptions<ConsumingBrokerSettings> options,
-        ILogger<Consumer<T>> logger
+        ILogger<ConsumerService<T>> logger
         )
     {
         var settings = options.Value.Settings?.FirstOrDefault(p => p.Topic == typeof(T).Name);

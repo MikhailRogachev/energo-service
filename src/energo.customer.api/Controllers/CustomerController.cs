@@ -15,7 +15,7 @@ public class CustomerController(
     ILogger<CustomerController> logger,
     IValidator<CustomerDto> validator,
     IMapper mapper,
-    IProducer<Customer> producerService
+    IProducerService<Customer> producerService
     ) : ControllerBase
 {
     [HttpPost]
@@ -31,7 +31,7 @@ public class CustomerController(
 
         var customer = mapper.Map<Customer>(customerDto);
 
-        await producerService.ProduceAsync(customer, Topics.Customer);
+        await producerService.ProduceAsync(customer, Topics.Customer, CustomerTransactionType.AddCustomer);
 
         return Ok(customer);
     }
