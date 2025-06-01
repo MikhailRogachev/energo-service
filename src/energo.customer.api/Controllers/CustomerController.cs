@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using energo.customer.api.Dto;
+using energo.data.Events.CustomerEvents;
 using energo.domain.Contracts.Constants;
 using energo.domain.Models;
 using energo.infrastructure.Interfaces;
@@ -31,7 +32,7 @@ public class CustomerController(
 
         var customer = mapper.Map<Customer>(customerDto);
 
-        await producerService.ProduceAsync(customer, Topics.Customer, CustomerTransactionType.AddCustomer);
+        await producerService.ProduceAsync(customer, Topics.Customer, typeof(AddCustomerEvent).Name);
 
         return Ok(customer);
     }

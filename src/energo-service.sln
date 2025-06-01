@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "energo.management.unit.test
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ruby-testhelper", "ruby-testhelper\ruby-testhelper.csproj", "{2EA24611-C845-4D3C-BC50-B45C3BFF3869}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "energo.infrastructure.tests", "energo.infrastructure.tests\energo.infrastructure.tests.csproj", "{E4701AC6-D657-47B6-832D-9B46555A3505}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{2EA24611-C845-4D3C-BC50-B45C3BFF3869}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2EA24611-C845-4D3C-BC50-B45C3BFF3869}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2EA24611-C845-4D3C-BC50-B45C3BFF3869}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4701AC6-D657-47B6-832D-9B46555A3505}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4701AC6-D657-47B6-832D-9B46555A3505}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4701AC6-D657-47B6-832D-9B46555A3505}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4701AC6-D657-47B6-832D-9B46555A3505}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -60,6 +66,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{008E6C40-F824-4757-9797-85BAD46E8903} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{2EA24611-C845-4D3C-BC50-B45C3BFF3869} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{E4701AC6-D657-47B6-832D-9B46555A3505} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90AD8A54-5C3A-4546-827C-53B83A3BB7B2}

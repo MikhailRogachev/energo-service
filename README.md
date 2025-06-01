@@ -31,6 +31,7 @@ erDiagram
 ```
 
 ### Add Customer
+The diagram below shows the "Add customer Process".
 
 ```mermaid
 sequenceDiagram
