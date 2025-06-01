@@ -4,8 +4,7 @@ using System.Text.Json;
 
 namespace energo.infrastructure.Serializers;
 
-public class CustomValueSerializer<T> : ISerializer<T>
-    where T : class
+public class CustomValueSerializer<T> : ISerializer<T> where T : class
 {
     public byte[] Serialize(T data, SerializationContext context)
     {

@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36109.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inventory-consumer", "inventory-consumer\inventory-consumer.csproj", "{D8C7DEC3-8400-43E0-B83B-FE49B329F191}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inventory-producer", "inventory-producer\inventory-producer.csproj", "{D805CED8-7A86-4E1B-A22B-5E28576EE9BD}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "energo.domain", "energo.domain\energo.domain.csproj", "{03AA3118-0586-4C75-AB24-9F3FB7E7BE23}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "energo.data", "energo.data\energo.data.csproj", "{97ED3B1E-C5A4-4A2E-A79A-3238BB44ECF8}"
@@ -15,20 +11,20 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "energo.infrastructure", "en
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "energo.customer.api", "energo.customer.api\energo.customer.api.csproj", "{62668A47-6AAD-4850-8C1D-58E075D3B95B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "energo.management.api", "energo.management.api\energo.management.api.csproj", "{87A275F9-6249-4923-84B3-3CF23C1B33D8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "energo.management.unit.tests", "energo.management.unit.tests\energo.management.unit.tests.csproj", "{008E6C40-F824-4757-9797-85BAD46E8903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ruby-testhelper", "ruby-testhelper\ruby-testhelper.csproj", "{2EA24611-C845-4D3C-BC50-B45C3BFF3869}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{D8C7DEC3-8400-43E0-B83B-FE49B329F191}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8C7DEC3-8400-43E0-B83B-FE49B329F191}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8C7DEC3-8400-43E0-B83B-FE49B329F191}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8C7DEC3-8400-43E0-B83B-FE49B329F191}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D805CED8-7A86-4E1B-A22B-5E28576EE9BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D805CED8-7A86-4E1B-A22B-5E28576EE9BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D805CED8-7A86-4E1B-A22B-5E28576EE9BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D805CED8-7A86-4E1B-A22B-5E28576EE9BD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{03AA3118-0586-4C75-AB24-9F3FB7E7BE23}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{03AA3118-0586-4C75-AB24-9F3FB7E7BE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03AA3118-0586-4C75-AB24-9F3FB7E7BE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -45,9 +41,25 @@ Global
 		{62668A47-6AAD-4850-8C1D-58E075D3B95B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{62668A47-6AAD-4850-8C1D-58E075D3B95B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{62668A47-6AAD-4850-8C1D-58E075D3B95B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{87A275F9-6249-4923-84B3-3CF23C1B33D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87A275F9-6249-4923-84B3-3CF23C1B33D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87A275F9-6249-4923-84B3-3CF23C1B33D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87A275F9-6249-4923-84B3-3CF23C1B33D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{008E6C40-F824-4757-9797-85BAD46E8903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{008E6C40-F824-4757-9797-85BAD46E8903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{008E6C40-F824-4757-9797-85BAD46E8903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{008E6C40-F824-4757-9797-85BAD46E8903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EA24611-C845-4D3C-BC50-B45C3BFF3869}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EA24611-C845-4D3C-BC50-B45C3BFF3869}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EA24611-C845-4D3C-BC50-B45C3BFF3869}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EA24611-C845-4D3C-BC50-B45C3BFF3869}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{008E6C40-F824-4757-9797-85BAD46E8903} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{2EA24611-C845-4D3C-BC50-B45C3BFF3869} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {90AD8A54-5C3A-4546-827C-53B83A3BB7B2}

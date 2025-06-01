@@ -2,5 +2,5 @@
 
 public class Topics
 {
-    public const string AddCustomer = "AddCustomer";
+    public const string Customer = "Customer";
 }

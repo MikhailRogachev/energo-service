@@ -31,7 +31,7 @@ public class CustomerController(
 
         var customer = mapper.Map<Customer>(customerDto);
 
-        await producerService.ProduceAsync(customer, Topics.AddCustomer);
+        await producerService.ProduceAsync(customer, Topics.Customer);
 
         return Ok(customer);
     }
