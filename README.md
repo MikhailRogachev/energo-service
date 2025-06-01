@@ -29,3 +29,20 @@ erDiagram
         DateTime LastUpdatedAt
     }
 ```
+
+### Add Customer
+
+```mermaid
+sequenceDiagram
+    actor User
+    participant customer.api
+    participant Broker
+    participant management.api
+    participant Database
+
+    User ->> customer.api: Request
+    customer.api ->> Broker: Produce Message
+    customer.api ->> User: Response
+    Broker <<->> management.api: Consume Message
+    management.api ->> Database: Save Customer
+```
