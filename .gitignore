@@ -361,3 +361,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+broker-1-data/
+broker-2-data/
+broker-3-data/
+zookeeper-1_data/
+zookeeper-1_log/
+zookeeper-2_data/
+zookeeper-3_data/

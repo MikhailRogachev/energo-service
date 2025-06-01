@@ -2,12 +2,12 @@
 
 namespace inventory_producer.Services;
 
-public class ProducerService
+public class __ProducerService
 {
     private readonly IConfiguration _configuration;
     private readonly IProducer<Null, string> _producer;
 
-    public ProducerService(IConfiguration configuration)
+    public __ProducerService(IConfiguration configuration)
     {
         _configuration = configuration;
 

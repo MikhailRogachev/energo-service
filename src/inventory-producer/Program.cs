@@ -1,13 +1,23 @@
-using inventory_producer.Services;
+using energo.infrastructure.Interfaces;
+using energo.infrastructure.Producer;
+using energo.infrastructure.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
 
 // Add services to the container.
 
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
-builder.Services.AddSingleton<ProducerService>();
+// add options
+builder.Services.AddOptions<BrokerSettings>()
+            .Bind(builder.Configuration.GetSection(nameof(BrokerSettings)));
+
+// add services
+
+builder.Services.AddSingleton<IProducerService, ProducerService>();
+
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -20,9 +30,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
+//app.UseHttpsRedirection();
 
-app.UseAuthorization();
+//app.UseAuthorization();
 
 app.MapControllers();
 
