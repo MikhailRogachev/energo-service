@@ -11,7 +11,6 @@ public interface IServiceFactory
 
     Type? TryResolveEventHandler(Type eventType);
 
-
     /// <summary>
     /// This function creates the new instance of eventhandler base on event name.
     /// </summary>

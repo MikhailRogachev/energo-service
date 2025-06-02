@@ -1,7 +1,7 @@
 ﻿using AutoMapper;
 using energo.customer.api.Dto;
-using energo.data.Events.CustomerEvents;
 using energo.domain.Contracts.Constants;
+using energo.domain.Events.CustomerEvents;
 using energo.domain.Models;
 using energo.infrastructure.Interfaces;
 using FluentValidation;

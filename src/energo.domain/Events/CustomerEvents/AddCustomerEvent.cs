@@ -2,7 +2,7 @@
 using energo.domain.Contracts.Interfaces;
 using energo.domain.Models;
 
-namespace energo.data.Events.CustomerEvents;
+namespace energo.domain.Events.CustomerEvents;
 
 public class AddCustomerEvent : IEvent
 {

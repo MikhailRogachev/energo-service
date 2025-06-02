@@ -1,4 +1,4 @@
-﻿using energo.data.Events.CustomerEvents;
+﻿using energo.domain.Events.CustomerEvents;
 using energo.infrastructure.EventHandlers.CustomerHandlers;
 using Moq;
 using ruby_outbox_infrastructure.Services;

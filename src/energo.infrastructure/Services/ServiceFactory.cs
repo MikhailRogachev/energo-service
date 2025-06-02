@@ -17,11 +17,12 @@ public class ServiceFactory(IServiceProvider serviceProvider) : IServiceFactory
     {
         if (!_events.TryGetValue(eventName, out var type))
         {
-            type = AppDomain.CurrentDomain
+            var assembly = AppDomain.CurrentDomain
                 .GetAssemblies()
-                .Where(p => p.FullName!.StartsWith("energo"))
-                .SelectMany(p => p.GetTypes())
-                .FirstOrDefault(p => p.Name == eventName);
+                .FirstOrDefault(a => a.GetName().Name == typeof(IEvent).Assembly.GetName().Name);
+
+            if (assembly != null)
+                type = assembly.GetTypes().FirstOrDefault(p => p.Name == eventName);
 
             if (type == null)
                 return null;
