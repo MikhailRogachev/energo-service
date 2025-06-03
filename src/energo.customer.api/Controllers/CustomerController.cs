@@ -9,7 +9,6 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace energo.customer.api.Controllers;
 
-
 [Route("api/[controller]")]
 [ApiController]
 public class CustomerController(
@@ -20,6 +19,8 @@ public class CustomerController(
     ) : ControllerBase
 {
     [HttpPost]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(typeof(ProblemDetails), StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> AddCustomerAsync([FromBody] CustomerDto customerDto)
     {
         var validationResult = validator.Validate(customerDto);
